@@ -34,8 +34,9 @@ cmake \
   -DgRPC_INSTALL=ON \
   -DgRPC_BUILD_TESTS=OFF \
   -DgRPC_SSL_PROVIDER=package \
+  -DgRPC_CARES_PROVIDER=package \
   ../..
-make -j4 install
+make -j install
 popd
 
 # Build helloworld example using cmake
